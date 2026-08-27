@@ -1,0 +1,36 @@
+.container{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+.container a{
+    border:1px solid rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+    
+
+}
+.h1{
+    text-align: center;
+}
+.container a:hover{     
+    background-color: rgb(194, 19, 19);
+    color: rgb(85, 146, 16);
+}
+.container ul{
+    list-style:none;
+    background-color: rgb(55, 153, 133);
+
+    /* border:1px solid black; */
+    padding:10px 10px;
+}
+
+.container ul li{
+    text-align:center;
+    padding:10px;
+    margin:5px;
+}
+ul li:first-child{
+    background-color: rgb(55, 153, 133);
+}
