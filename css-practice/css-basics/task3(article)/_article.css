@@ -1,0 +1,9 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, serif; background-color: #fdfdfd; color: #222; padding: 2em 10%; }
+header h1 { font-size: 2em; margin-bottom: 0.2em; }
+.subheading { color: #666; font-style: italic; margin-bottom: 1.5em; }
+article p { margin-bottom: 1.2em; line-height: 1.7em; font-size: 1.05em; }
+article p::first-letter { font-size: 2em; font-weight: bold; color: #b8860b; }
+article p::first-line { font-weight: bold; }
+mark { background-color: #ffe58a; color: #222; padding: 0 0.2em; }
+blockquote { border-left: 4px solid #b8860b; background-color: #fff6e0; padding: 1em 1.5em; margin: 1.5em 0; font-style: italic; }

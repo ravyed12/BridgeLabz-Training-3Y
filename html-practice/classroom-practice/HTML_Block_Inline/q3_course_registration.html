@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration Form</title>
+</head>
+<body>
+
+    <h1>Course Registration</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Fieldset grouping course selection -->
+        <fieldset>
+            <legend>Course Selection</legend>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="webdev">Web Development</option>
+                <option value="qml">Quantum Machine Learning</option>
+                <option value="genai">Generative AI Engineering</option>
+                <option value="dsa">Data Structures and Algorithms</option>
+            </select>
+        </fieldset>
+
+    </form>
+
+    <br>
+
+    <h2>Available Course Schedules</h2>
+    <table border="1" cellpadding="6">
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Instructor</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>10:00 AM - 12:00 PM</td>
+            <td>Dr. Priyanka Kokil</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>Dr. Tejendra Dixit</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>11:00 AM - 1:00 PM</td>
+            <td>Prof. A. Sharma</td>
+        </tr>
+    </table>
+
+</body>
+</html>
