@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: #d9ddd4; 
+            font-family: "Times New Roman", Times, serif; 
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 700px; 
+            border: 1px solid #efebeb;
+        }
+        th, td {
+            border: 1px solid #090707;
+            padding: 10px 15px;
+            text-align: left;
+        }
+        th {
+            text-align: center;
+            font-weight: bold;
+        }
+        .center-row {
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 200px;
+            padding: 3px;
+        }
+        textarea {
+            width: 250px;
+            resize: vertical;
+        }
+        .inline-group {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        button {
+            padding: 3px 12px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form action="#" method="POST">
+        <table>
+            <!-- Table Header -->
+            <tr>
+                <th colspan="2">Registration Form</th>
+            </tr>
+            
+            <!-- Standard Inputs -->
+            <tr>
+                <td>Full Name</td>
+                <td><input type="text" name="fullName" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" placeholder="abc@gmail.com"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="tel" name="phone" placeholder="9876543210"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            
+            <!-- Radio Buttons -->
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <div class="inline-group">
+                        <label><input type="radio" name="gender" value="Male"> Male</label>
+                        <label><input type="radio" name="gender" value="Female"> Female</label>
+                        <label><input type="radio" name="gender" value="Other"> Other</label>
+                    </div>
+                </td>
+            </tr>
+            
+            <!-- Checkboxes -->
+            <tr>
+                <td>Skills</td>
+                <td>
+                    <div class="inline-group">
+                        <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+                        <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                        <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+                    </div>
+                </td>
+            </tr>
+            
+            <!-- Select Dropdown -->
+            <tr>
+                <td>Course</td>
+                <td>
+                    <select name="course">
+                        <option value="">--Select Course--</option>
+                        <!-- Add additional options here if needed -->
+                    </select>
+                </td>
+            </tr>
+            
+            <!-- Textarea -->
+            <tr>
+                <td>Address</td>
+                <td><textarea name="address" rows="3"></textarea></td>
+            </tr>
+            
+            <!-- File Upload -->
+            <tr>
+                <td>Upload Resume</td>
+                <td><input type="file" name="resume"></td>
+            </tr>
+            
+            <!-- Submit and Reset Buttons -->
+            <tr>
+                <td colspan="2" class="center-row">
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

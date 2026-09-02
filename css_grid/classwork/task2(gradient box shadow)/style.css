@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="card.css">
+
+</head>
+<body>
+    <h1>Gradient, Box Shadow, Transition,hover effect </h1>
+    <div class="container">
+    <div class="card">
+        <h2>Profile</h2>
+    </div>
+    </div>
+</body>
+</html>
+[9/2, 3:36 PM] Shivang: .container{
+    width: 400px;
+    height: 500px;
+    border: 1px solid red; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    
+    text-align: center;
+    /* background-image: linear-gradient(130deg, red 0% 30%, yellow 40% 60%, blue 65% 80%, green 85% 100%); */
+    background-image: repeating-radial-gradient(red 0% 30%, yellow 40% 60%,blue 65% 80%);
+   
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition: transform 1s ease;
+}
+.card:hover{    
+    box-shadow:  10px 10px 10px black,  -10px -10px 10px green;
+    /* transform:translate(-30px); */
+    /* transform: scale(1.1); */
+    /* transform: rotate(72000deg); */
+    /* transform:translate(10px,10px) scale(1.6) rotate(360deg); */
+    transform:skew(25deg,25deg)
+
+}
