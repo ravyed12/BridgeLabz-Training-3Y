@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>URI Encoding</title>
+</head>
+<body>
+<h2>URI Encoding Demo</h2>
+<p id="output"></p>
+<script>
+let url = "https://example.com/search?q=HTML & CSS";
+let encodedURL = encodeURI(url);
+let component = "HTML & CSS";
+let encodedComponent = encodeURIComponent(component);
+document.getElementById("output").innerHTML = "encodeURI: " + encodedURL + "<br>encodeURIComponent: " + encodedComponent;
+</script>
+</body>
+</html>

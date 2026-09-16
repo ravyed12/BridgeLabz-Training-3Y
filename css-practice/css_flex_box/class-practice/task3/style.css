@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 100px;
+    background-color: #f5df9e;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+}
+
+.logo h1 {
+    font-size: 32px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #5555aa;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 25px;
+    font-size: 25px;
+}

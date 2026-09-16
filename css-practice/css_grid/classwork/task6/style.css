@@ -1,0 +1,15 @@
+button{
+    position: relative;
+}
+.btn::after{
+    position: absolute;
+    content: "";
+    left:-20px;
+    opacity: 0;
+    background-color: rgb(99, 208, 239);
+    width: 0px;
+    height: 100%;
+    padding:3px;
+    
+    
+}

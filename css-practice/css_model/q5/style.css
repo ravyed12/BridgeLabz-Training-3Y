@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+main {
+  padding: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+input[type="text"] {
+  border: 2px solid #4caf50;
+  padding: 6px;
+  margin-right: 10px;
+}
+
+input[type="password"] {
+  border: 2px solid #e53935;
+  padding: 6px;
+}
+
+a[href^="https"] {
+  color: #2e7d32;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+a[href^="http"]:not([href^="https"]) {
+  color: #c62828;
+}
+
+.item-list li:hover {
+  background-color: #ffe0b2;
+}
+
+.item-list li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+.item-list li:nth-child(even) {
+  background-color: #e3f2fd;
+}
+
+.item-list li::before {
+  content: "-> ";
+  color: #ff5722;
+}
+
+.item-list li::after {
+  content: " *";
+  color: #9c27b0;
+}
+
+input[type="text"]:focus {
+  outline: 3px solid #2196f3;
+  background-color: #e3f2fd;
+}
+
+.parent > p {
+  color: #1565c0;
+  font-weight: bold;
+}
+
+.adjacent h3 + p {
+  color: #6a1b9a;
+  font-weight: bold;
+}
+
+.general h3 ~ p {
+  color: #ef6c00;
+}
