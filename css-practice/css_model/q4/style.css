@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  color: #2b2b2b;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+}
+
+.depth-heading {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 250px;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-soft {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-strong {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.card-colored {
+  box-shadow: 0 8px 20px rgba(230, 126, 34, 0.4);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-soft:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-strong:hover {
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card-colored:hover {
+  box-shadow: 0 18px 30px rgba(230, 126, 34, 0.6);
+}

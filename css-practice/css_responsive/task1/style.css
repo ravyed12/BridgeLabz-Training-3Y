@@ -1,0 +1,31 @@
+
+body {
+    background-color: #fce4d6; 
+    margin: 0;
+    padding: 20px 40px;
+    font-family: "Times New Roman", Times, serif; 
+    font-style: italic;
+    color: #444;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 70vh; 
+    border: 1px solid #777; /* Outer border */
+}
+
+.card {
+    background-color: #e06666; /* Coral/Red color */
+    border: 1px solid #777;
+    padding: 15px;
+    font-size: 1.5rem;
+}

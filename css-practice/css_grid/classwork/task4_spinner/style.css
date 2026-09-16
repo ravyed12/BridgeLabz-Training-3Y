@@ -1,0 +1,65 @@
+/* .container {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* "move" added to the shorthand */
+    /* animation: move 2s ease infinite ; */
+
+/* 
+@keyframes move {
+    0% {
+        transform: translate(0px);
+    }
+    25% {
+        transform: translate(600px);
+    }
+    50%{
+        transform: translate(600px,600px);
+    } 
+    75%{
+        transform: translate(   w0px,600px);
+    }
+} */
+.spinner{
+    width: 100px;
+    height: 100px;
+
+
+    background-color: rgb(238, 238, 248); 
+    /* "move" added to the shorthand */
+    border-top: 4px solid rgb(16, 14, 14);
+    border-radius: 50%;
+    animation:spin 1s linear infinite ;
+}
+
+@keyframes spin{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.ball{
+    width: 100px;
+    height: 100px;
+
+    background-color: rgb(99, 208, 239); 
+    /* "move" added to the shorthand */
+    margin-top: 300px;
+    border-radius: 50%;
+    animation:bounce 2s linear infinite ;
+
+
+}
+@keyframes bounce{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-200px);
+    }
+    60%{
+        transform:translateY(-300px);
+    }
+}
