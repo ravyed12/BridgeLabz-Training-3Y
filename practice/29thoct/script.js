@@ -40,21 +40,69 @@
 // console.log("End");
 
 
-let mypromise = new Promise((resolve, reject)=>{
-    let age=20;
-    if(age>18){
-        resolve("You are eligible to vote");
-    } else {
-        reject("You are not eligible to vote");
-    }
-});
+// let mypromise = new Promise((resolve, reject)=>{
+//     let age=20;
+//     if(age>18){
+//         resolve("You are eligible to vote");
+//     } else {
+//         reject("You are not eligible to vote");
+//     }
+// });
 
 
 
-mypromise
-.then((msg)=>{
-    console.log(msg)
+// mypromise
+// .then((msg)=>{
+//     console.log(msg)
+// })
+// .catch((err)=>{
+//     console.log(err)
+// });
+
+
+
+ console.log("Start");
+
+
+
+
+function getuser(){
+    return new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            console.log("user data..");
+            resolve();
+        }, 3000);
+    }); 
+}
+ 
+function getuserBankDeatils(){
+    return new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            console.log("user bank details");
+            resolve();
+        }, 1000);
+    });
+}
+
+function getuserInc(){
+    return new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            console.log("user insurance details");
+            resolve();
+        }, 2000);
+    });
+}
+// promise chaining
+getuser()
+.then(()=>{
+    return getuserBankDeatils();
+})
+.then(()=>{
+    return getuserInc();
+})
+.then(()=>{
+    console.log("All data fetched");
 })
 .catch((err)=>{
-    console.log(err)
-});
+    console.log(err);
+})
